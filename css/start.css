@@ -1,0 +1,291 @@
+body{background-color: black;}
+.carousel-caption{
+    bottom: 270px;
+}
+.carousel-item{
+	height: 100vh;
+
+}
+.carousel-item h2{
+	color: white;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px black;
+}
+.carousel-item h2{
+	font-size: 2em;
+	width: 100%;
+}
+.carousel-item h5{
+	font-size: 1.3em;
+}
+.carousel-caption {
+    top: 50%;
+    color: black;
+    position: absolute;
+    z-index: 0; 
+}
+.nav{
+    background-color: black;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+}
+.skill h2, p{
+    color: white;
+}
+.skill{
+    align-items: center;
+}
+.work1{
+    height: 17em;
+    background-color: #FFBB00;
+}
+h2{
+    color: white;
+}
+.contact{
+    background-color: #FFBB00;
+}
+/* .contact{
+    align-items: center;
+} */
+ul{
+    margin-left: -40px;
+    list-style: none;
+}
+li{
+    color: white;
+}
+.fab {
+    color: #FFBB00;
+}
+.btn {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    font-family: Arial;
+    color: #000;
+    font-size: 23px;
+    background: #ffffff;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+.skill h5{
+    color: white;
+}
+.btn:hover {
+    background: black;
+    text-decoration: none;
+    color: #FFBB00;
+} 
+.Message{
+    background-color: #141414;
+}
+.navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+}
+.butt{
+      font-weight: 700;
+      color: #FFBB00;
+}
+
+.container .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+.container .card .face.face1{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+.container .card:hover .face.face1{
+    background-color: #FFBB00;
+    transform: translateY(0);
+}   
+.container .card .face.face1 .content{
+    opacity: 0.2;
+    transition: 0.5s;
+}
+.container .card:hover .face.face1 .content{
+    opacity: 1;
+}
+.container .card .face.face1 .content img{
+    max-width: 100px;
+}
+.container .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+.container .card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+.container .card .face.face2 .content p{
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+.container .card .face.face2 .content a{
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+.container .card .face.face2 .content a:hover{
+    background: #333;
+    color: #fff;
+}
+
+.timeline{
+    position: relative;
+    margin: 50px auto;
+    padding: 40px 0;
+    width: 1000px;
+    box-sizing: border-box;
+}
+.timeline:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #c5c5c5;
+}
+.timeline ul{
+    margin: 0;
+    padding: 0;
+}
+.timeline ul li{
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+.timeline ul li:nth-child(odd){
+    float: left;
+    text-align:right; 
+    clear: both;
+}
+.timeline ul li:nth-child(even){
+    float: right;
+    text-align:left; 
+    clear: both;
+}
+.content{
+    padding-bottom: 20px;
+}
+.timeline ul li:nth-child(odd):before{
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 187, 0, 1);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(255, 187, 0, 0.2);
+}
+.timeline ul li:nth-child(even):before{
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 187, 0, 1);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(255, 187, 0, 0.2);
+}
+.timeline ul li h3{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: rgba(255, 187, 0, 1);
+}
+.timeline ul li p{
+    margin: 10px 0 0;
+    padding: 0;
+}
+.timeline ul li .time h4{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.timeline ul li:nth-child(odd) .time{
+    position: absolute;
+    top: 12px;
+    right: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: rgba(255, 187, 0, 1);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(255, 187, 0, 0.3);
+}
+.timeline ul li:nth-child(even) .time{
+    position: absolute;
+    top: 12px;
+    left: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: rgba(255, 187, 0, 1);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(255, 187, 0, 0.3);
+}
+@media (max-width: 1000px){
+    .timeline{
+        width: 100%;
+    }
+}
+@media (max-width: 767px){
+    .timeline{
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .timeline:before{
+        left: 20px;
+    }
+    .timeline ul li:nth-child(odd), /*Aqui il*/
+    .timeline ul li:nth-child(even){
+        width: 100%;
+        text-align: left;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }   
+    .timeline ul li:nth-child(odd):before,
+    .timeline ul li:nth-child(even):before{
+        top: -18px;
+        left: 16px;
+
+    }
+    .timeline ul li:nth-child(odd) .time,
+    .timeline ul li:nth-child(even) .time{
+        top: -30px;
+        left: 50px;
+        right: inherit;
+    }
+}
