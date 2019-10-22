@@ -83,3 +83,11 @@ body{
     background: #333;
     color: #fff;
 }
+.btn2{
+    border: solid 1px black;
+    padding: 5px;
+    margin: 5px;
+}
+.btn2:hover{
+    background: #FFBB00;
+}

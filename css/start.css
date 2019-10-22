@@ -1,4 +1,4 @@
-body{background-color: black;}
+body{background-color: black;font-family: 'Raleway', sans-serif;}
 .carousel-caption{
     bottom: 270px;
 }
@@ -58,6 +58,9 @@ li{
 }
 .fab {
     color: #FFBB00;
+}
+.fab:hover{
+    color: #966e00;
 }
 .btn {
     -webkit-border-radius: 0;
@@ -288,4 +291,8 @@ li{
         left: 50px;
         right: inherit;
     }
+}
+
+a{
+    text-decoration: none;
 }
