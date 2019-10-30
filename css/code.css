@@ -40,6 +40,42 @@
     cursor: pointer;
     font-size: 16px;
 }
+.btn-custongreen1{
+    border: 2px solid #29c65a;
+    background: transparent;
+    color: #29c65a;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-custongreen2{
+    border: none;
+    background: #29c65a;
+    color: white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-custonorange1{
+    border: 2px solid #d77761;
+    background: transparent;
+    color: #d77761;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-custonorange2{
+    border: none;
+    background: #d77761;
+    color: white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
 .mt-100{
     margin-top: 100px;
 }
