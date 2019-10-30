@@ -40,36 +40,62 @@
     cursor: pointer;
     font-size: 16px;
 }
+<<<<<<< HEAD
 .btn-custongreen1{
     border: 2px solid #29c65a;
     background: transparent;
     color: #29c65a;
+=======
+.btn-custonblue11{
+    border: 2px solid #68a4ff;
+    background: transparent;
+    color: #68a4ff;
+>>>>>>> c63c3757e2735c6085d52abac8342539ea6b442b
     width: 150px;
     height: 50px;
     cursor: pointer;
     font-size: 16px;
 }
+<<<<<<< HEAD
 .btn-custongreen2{
     border: none;
     background: #29c65a;
+=======
+.btn-custonblue22{
+    border: none;
+    background: #68a4ff;
+>>>>>>> c63c3757e2735c6085d52abac8342539ea6b442b
     color: white;
     width: 150px;
     height: 50px;
     cursor: pointer;
     font-size: 16px;
 }
+<<<<<<< HEAD
 .btn-custonorange1{
     border: 2px solid #d77761;
     background: transparent;
     color: #d77761;
+=======
+.btn-custongray1{
+    border: 2px solid #cccccc;
+    background: transparent;
+    color: #cccccc;
+>>>>>>> c63c3757e2735c6085d52abac8342539ea6b442b
     width: 150px;
     height: 50px;
     cursor: pointer;
     font-size: 16px;
 }
+<<<<<<< HEAD
 .btn-custonorange2{
     border: none;
     background: #d77761;
+=======
+.btn-custongray{
+    border: none;
+    background: #cccccc;
+>>>>>>> c63c3757e2735c6085d52abac8342539ea6b442b
     color: white;
     width: 150px;
     height: 50px;
