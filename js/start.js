@@ -37,16 +37,16 @@ $(document).ready(function(){
       $(document).scroll(function() { 
         scroll_start = $(this).scrollTop();
           if(scroll_start > offset.top) {
-            $(".navbar").css('background-color', '#FFBB00');
-            $(".navbar").css('transition', '500ms ease');
-            $(".nav-link").css('color', 'black');
-            $(".navbar-brand").css('color', 'black');
+            $('.navbar').css('opacity', '1');
+            $('.navbar').css('background-color', '#FFBB00');;
+            $('.navbar').css('transition', '.5s ease-in-out')
+
           } 
-          else {
-            $('.navbar-default').css('background-color', 'transparent');
-            $('.nav-link').css('color', 'white');
-            $('.navbar-brand').css('color', 'white');
+          else{
+            $('.navbar').css('opacity', '0');
           }
+          
     });
   }
 });
+

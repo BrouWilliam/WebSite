@@ -1,4 +1,13 @@
 body{background-color: black;font-family: 'Raleway', sans-serif;}
+.fa-bars{
+    color: black;
+}
+.navbar-dark .navbar-brand{
+    color: black;
+}
+.navbar{
+    opacity: 0;
+}
 .carousel-caption{
     bottom: 270px;
 }
@@ -28,7 +37,7 @@ body{background-color: black;font-family: 'Raleway', sans-serif;}
     background-color: black;
 }
 .navbar-dark .navbar-nav .nav-link{
-    color: white;
+    color: black;
 }
 .skill h2, p{
     color: white;
