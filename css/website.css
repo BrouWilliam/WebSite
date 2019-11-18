@@ -1,7 +1,7 @@
 .navbar{
     background: black;
 }
-.card{
+/* .card{
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -44,4 +44,18 @@
 .card a:hover{
     background: #333;
     color: #fff;
+} */
+
+section a{
+    padding: 0.3rem 1rem;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: black;
+    border: solid 2px #000;
+}
+footer{
+    background: black;
+}
+footer a{
+    color: rgba(255, 187, 0, 1);
 }
