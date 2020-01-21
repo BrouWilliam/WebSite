@@ -342,3 +342,37 @@ a{
 
 @media (min-width: 1200px) {  }
 
+.portfolio{
+    background: white;
+}
+
+.work{
+    width: 100%;
+    position: relative;
+}
+.work > .workText{
+    position: absolute;
+    top: 85px;
+}
+.work > .workText > .underline{
+    display: block;
+    background: #027bff;
+    height: 3px;
+    width: 61px;
+    margin-top: 5px;
+}
+.work > .workImg{
+    width: 85%;
+    float: right;
+    -webkit-box-shadow: 0 3px 70px 0px rgba(23,30,36,0.06);
+    -moz-bx-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+    box-shadow: 0 3px 70px 0px rgba(23,30,36,0.6);
+}
+.work ul{
+    position: absolute;
+    bottom: 0;
+    right: 86%;
+}
+.work ul li{
+    margin-top: 20px;
+}
