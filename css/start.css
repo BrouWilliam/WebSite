@@ -346,7 +346,11 @@ a{
 @media (min-width: 1200px) {  }
 
 .portfolio{
-    background: white;
+    background: url(../img/background-portfolio.svg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .work{
@@ -357,15 +361,26 @@ a{
     position: absolute;
     top: 85px;
 }
-.work > .workText a{
+.project1 .work > .workText a{
+    color: #a4081f;
+}
+.project2 .work > .workText a{
     color: #FFBB00;
 }
-.work > .workText a h5{
+.project1 .work > .workText a h5{
     font-weight: 600;
+
 }
-.work > .workText > .underline{
+.project2 .work > .workText a h5{
+    font-weight: 600;
+    color: red;
+}
+.project2 .work > .workText h1{
+    color: #FFBB00;
+}
+.project1 .work > .workText > .underline{
     display: block;
-    background: #FFBB00;
+    background: #a4081f;
     height: 3px;
     width: 61px;
     margin-top: 5px;

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/artigo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello Friend</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Como fazer migração de site WordPress para outro servidor</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+              </div>
+              <span style="font-size:30px;cursor:pointer;color: white;" onclick="openNav()">&#9776; </span>
+              <div id="main" class="mt-5">
+                <div class="artigo text-light">
+                    <div class="container">
+                        <h1 class="text-center">Como fazer migração de site WordPress para outro servidor</h1>
+                        <h4 class="text-center">Neste artigo mostra o quão facil é fazer uma migração de um site WordPress para outra hospedagem</h4>
+                        <div class="row mt-5">
+                            <div class="col-md-12 col-sm-12 col-12">
+                                <p>A primeira coisa a se fazer é ter certeza que você tenha acesso ao painel da hospedagem que está o site no momento e o painel da hospedagem onde o nosso site será migrado, pois você tera que acessar o banco de dados e o FTP do site.<br><br>
+                                    
+                                    <h2>Backup do Banco de dados</h2>
+                                    De inicio vamos fazer o backup do banco de dados WordPress, para isso basta acessar o cPainel de sua hospedagem, na sesão Banco de Dados  deve se entrar no PhpMyAdmin e fazer o backup do banco de dados do site. Para isso basta selecionar todas as tabelas,
+                                    na parte inferior do site onde está escrito "Com marcados:", basta escolher a opção "Exportar", uma tela ira abrir após isso basta clicar em "Executar" e o download se iniciara automaticamente.
+                                </p>
+                                <img src="https://blog.templatetoaster.com/wp-content/uploads/2019/05/How-to-open-phpmyadmin-after-xampp-installed.jpg" alt="Painel Admin" class="img-fluid mt-5 mb-5">
+                                <h2>Download dos arquivos do site</h2>
+                                <p>Agora que já temos a base de dados do site, vamos fazer a transferencia dos arquivos do site, você pode fazer isso via FTP ou pelo gerenciador de arquivos do Painel da hospedagem, neste caso eu irei mostrar como fazer isso utilizando via
+                                    FTP com o Filezilla. Para isso, vamos criar um usuário FTP, devemos preecnher os campos com usuário e senha, após feito isso, abriremos o Filezilla e colocamos na parte superior o usuário FTP que criamos. Em "host", devemos colocar "ftp" mas o nome do seu site: "ftp.seusite",
+                                    em "user", colocamos o nome do nosso usuario que criamos, que no meu caso é "admin" e no campo "password" colocamos a senha que criamos no usuario FTP. Feito isso, abrimos a pasta  htdocs ou public_html que é onde os arquivos do nosso site está, após localizar a pasta onde fica
+                                    os arquivos do wordpress, basta copiar eles e colocar em uma pasta qualquer da sua Area de Trabalho. 
+                                </p>
+                                <img src="https://i0.wp.com/wordpress.org/support/files/2018/11/podz_filezilla_1-768x513.gif?ssl=1" alt="" class="img-fluid mt-5 mb-5">
+                                <
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+              </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            
+        </section>
+    </main>
+</body>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "350px";
+          document.getElementById("main").style.marginLeft = "350px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+</body>
+</html>
