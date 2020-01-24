@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/artigo.css">
+    <script src="https://kit.fontawesome.com/cf8c7ace37.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,6 +15,7 @@
         <div class="container-fluid">
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html"><i class="fas fa-home mr-2"></i>Home</a>
                 <a href="#">Como fazer migração de site WordPress para outro servidor</a>
                 <a href="#">Services</a>
                 <a href="#">Clients</a>
@@ -33,15 +35,18 @@
                                     De inicio vamos fazer o backup do banco de dados WordPress, para isso basta acessar o cPainel de sua hospedagem, na sesão Banco de Dados  deve se entrar no PhpMyAdmin e fazer o backup do banco de dados do site. Para isso basta selecionar todas as tabelas,
                                     na parte inferior do site onde está escrito "Com marcados:", basta escolher a opção "Exportar", uma tela ira abrir após isso basta clicar em "Executar" e o download se iniciara automaticamente.
                                 </p>
-                                <img src="https://blog.templatetoaster.com/wp-content/uploads/2019/05/How-to-open-phpmyadmin-after-xampp-installed.jpg" alt="Painel Admin" class="img-fluid mt-5 mb-5">
+                                <img src="img/artigo1.jpg" alt="Painel Admin" class="img-fluid mt-5 mb-5">
+
                                 <h2>Download dos arquivos do site</h2>
                                 <p>Agora que já temos a base de dados do site, vamos fazer a transferencia dos arquivos do site, você pode fazer isso via FTP ou pelo gerenciador de arquivos do Painel da hospedagem, neste caso eu irei mostrar como fazer isso utilizando via
                                     FTP com o Filezilla. Para isso, vamos criar um usuário FTP, devemos preecnher os campos com usuário e senha, após feito isso, abriremos o Filezilla e colocamos na parte superior o usuário FTP que criamos. Em "host", devemos colocar "ftp" mas o nome do seu site: "ftp.seusite",
                                     em "user", colocamos o nome do nosso usuario que criamos, que no meu caso é "admin" e no campo "password" colocamos a senha que criamos no usuario FTP. Feito isso, abrimos a pasta  htdocs ou public_html que é onde os arquivos do nosso site está, após localizar a pasta onde fica
                                     os arquivos do wordpress, basta copiar eles e colocar em uma pasta qualquer da sua Area de Trabalho. 
                                 </p>
-                                <img src="https://i0.wp.com/wordpress.org/support/files/2018/11/podz_filezilla_1-768x513.gif?ssl=1" alt="" class="img-fluid mt-5 mb-5">
-                                <
+                                <img src="img/artigo3.jpg" alt="" class="img-fluid mt-5 mb-5">
+                                
+                                <h2>Criando base da dados no novo servidor</h2>
+                                <p>Agora que já temos o backup do banco de dados e os arquivos WordPress do site, vamos configurar o banco de dados do servidor que iremos hospedar fazer a hospedagem, primeiro vamos na opção Banco de dados</p>
                             </div>
                         </div>
                     </div>
