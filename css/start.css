@@ -365,7 +365,7 @@ a{
     color: #a4081f;
 }
 .project2 .work > .workText a{
-    color: #FFBB00;
+    color: #29c65a;
 }
 .project1 .work > .workText a h5{
     font-weight: 600;
@@ -373,14 +373,21 @@ a{
 }
 .project2 .work > .workText a h5{
     font-weight: 600;
-    color: red;
+    color: #9a6a28;
 }
 .project2 .work > .workText h1{
-    color: #FFBB00;
+    color: #29c65a;
 }
 .project1 .work > .workText > .underline{
     display: block;
     background: #a4081f;
+    height: 3px;
+    width: 61px;
+    margin-top: 5px;
+}
+.project2 .work > .workText > .underline{
+    display: block;
+    background: #9a6a28;
     height: 3px;
     width: 61px;
     margin-top: 5px;
