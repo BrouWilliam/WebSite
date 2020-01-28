@@ -437,3 +437,178 @@ a{
     text-transform: uppercase;
 
 }
+
+
+
+
+
+
+
+
+.project, .post { 
+    position: relative; 
+    float: left; 
+    width: 100%; 
+    margin-bottom: 30px; 
+}
+
+.project figure,
+ .post figure { 
+    margin: 0; 
+    position: relative; 
+}
+
+.project .project-hover, 
+.project .post-hover, 
+.post .project-hover, 
+.post .post-hover { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background: rgba(0, 0, 0, 0.9); 
+    visibility: hidden; 
+    opacity: 0; 
+    -webkit-transition: .3s all ease; 
+    -o-transition: .3s all ease; 
+    transition: .3s all ease; 
+}
+
+.project .project-hover .project-hover-inner, 
+.project .project-hover .post-hover-inner, 
+.project .post-hover .project-hover-inner, 
+.project .post-hover .post-hover-inner, 
+.post .project-hover .project-hover-inner, 
+.post .project-hover .post-hover-inner, 
+.post .post-hover .project-hover-inner, 
+.post .post-hover .post-hover-inner { 
+    position: absolute; 
+    z-index: 99; 
+    left: 50%; 
+    top: 50%; 
+    visibility: hidden; 
+    opacity: 0; 
+    -webkit-transition: .3s all ease; 
+    -o-transition: .3s all ease; 
+    transition: .3s all ease; 
+    -webkit-transform: translate(-50%, -50%); 
+    -ms-transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%); 
+    transition: .3s all ease; 
+    text-align: center; 
+}
+
+.project .project-hover .project-hover-inner h2, 
+.project .project-hover .post-hover-inner h2, 
+.project .post-hover .project-hover-inner h2, 
+.project .post-hover .post-hover-inner h2, 
+.post .project-hover .project-hover-inner h2, 
+.post .project-hover .post-hover-inner h2, 
+.post .post-hover .project-hover-inner h2, 
+.post .post-hover .post-hover-inner h2 { 
+    color: #fff; 
+    font-size: 26px; 
+    line-height: 1.2; 
+    -webkit-transition: .3s all ease; 
+    -o-transition: .3s all ease; 
+    transition: .3s all ease; 
+    opacity: 0; 
+    visibility: hidden; 
+    position: relative; 
+    bottom: -30px; 
+}
+
+.project .project-hover .project-hover-inner span, 
+.project .project-hover .post-hover-inner span, 
+.project .post-hover .project-hover-inner span, 
+.project .post-hover .post-hover-inner span, 
+.post .project-hover .project-hover-inner span, 
+.post .project-hover .post-hover-inner span, 
+.post .post-hover .project-hover-inner span, 
+.post .post-hover .post-hover-inner span { 
+    color: rgba(255, 255, 255, 0.8); 
+    opacity: 0; 
+    visibility: hidden; 
+    position: relative; 
+    bottom: -30px; 
+    -webkit-transition: .5s all ease; 
+    -o-transition: .5s all ease; 
+    transition: .5s all ease; 
+}
+
+.project:hover .project-hover, 
+.project:hover .post-hover, 
+.project:focus .project-hover, 
+.project:focus .post-hover, 
+.post:hover .project-hover, 
+.post:hover .post-hover, 
+.post:focus .project-hover, 
+.post:focus .post-hover { 
+    visibility: visible; 
+    opacity: 1; 
+}
+
+.project:hover .project-hover .project-hover-inner, 
+.project:hover .project-hover .post-hover-inner, 
+.project:hover .post-hover .project-hover-inner, 
+.project:hover .post-hover .post-hover-inner, 
+.project:focus .project-hover .project-hover-inner, 
+.project:focus .project-hover .post-hover-inner, 
+.project:focus .post-hover .project-hover-inner, 
+.project:focus .post-hover .post-hover-inner, 
+.post:hover .project-hover .project-hover-inner, 
+.post:hover .project-hover .post-hover-inner, 
+.post:hover .post-hover .project-hover-inner, 
+.post:hover .post-hover .post-hover-inner, 
+.post:focus .project-hover .project-hover-inner, 
+.post:focus .project-hover .post-hover-inner, 
+.post:focus .post-hover .project-hover-inner, 
+.post:focus .post-hover .post-hover-inner { 
+    visibility: visible; 
+    opacity: 1; 
+    -webkit-animation-delay: 10s; 
+    animation-delay: 10s; 
+}
+
+.project:hover .project-hover .project-hover-inner h2, 
+.project:hover .project-hover .post-hover-inner h2, 
+.project:hover .post-hover .project-hover-inner h2, 
+.project:hover .post-hover .post-hover-inner h2, 
+.project:focus .project-hover .project-hover-inner h2, 
+.project:focus .project-hover .post-hover-inner h2, 
+.project:focus .post-hover .project-hover-inner h2, 
+.project:focus .post-hover .post-hover-inner h2, 
+.post:hover .project-hover .project-hover-inner h2, 
+.post:hover .project-hover .post-hover-inner h2, 
+.post:hover .post-hover .project-hover-inner h2, 
+.post:hover .post-hover .post-hover-inner h2, 
+.post:focus .project-hover .project-hover-inner h2, 
+.post:focus .project-hover .post-hover-inner h2, 
+.post:focus .post-hover .project-hover-inner h2, 
+.post:focus .post-hover .post-hover-inner h2 { 
+    opacity: 1; 
+    visibility: visible; 
+    bottom: 0px; 
+}
+
+.project:hover .project-hover .project-hover-inner span, 
+.project:hover .project-hover .post-hover-inner span, 
+.project:hover .post-hover .project-hover-inner span, 
+.project:hover .post-hover .post-hover-inner span, 
+.project:focus .project-hover .project-hover-inner span, 
+.project:focus .project-hover .post-hover-inner span, 
+.project:focus .post-hover .project-hover-inner span, 
+.project:focus .post-hover .post-hover-inner span, 
+.post:hover .project-hover .project-hover-inner span, 
+.post:hover .project-hover .post-hover-inner span, 
+.post:hover .post-hover .project-hover-inner span, 
+.post:hover .post-hover .post-hover-inner span, 
+.post:focus .project-hover .project-hover-inner span, 
+.post:focus .project-hover .post-hover-inner span, 
+.post:focus .post-hover .project-hover-inner span, 
+.post:focus .post-hover .post-hover-inner span { 
+    bottom: 0; 
+    visibility: visible; 
+    opacity: 1; 
+}
