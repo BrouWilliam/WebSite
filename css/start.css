@@ -33,8 +33,24 @@ body{background-color: black;font-family: 'Raleway', sans-serif;}
     position: absolute;
     z-index: 0; 
 }
-.nav{
-    background-color: black;
+nav{
+    background-color: #FFBB00;
+}
+ nav.black{
+    padding: 5px 10px;
+    transition: .5s;
+    opacity: 1;
+}
+nav.black .container .logo-navbar img{
+    height: 50px;
+    transition: .5s;
+}
+nav.black ul li a{
+    color: #000;
+    font-weight: 700 !important;
+}
+nav.black ul li a:hover{
+    color: #fff;
 }
 .navbar-dark .navbar-nav .nav-link{
     color: black;
@@ -346,12 +362,14 @@ a{
 @media (min-width: 1200px) {  }
 
 .portfolio{
-    background: url(../img/background-portfolio.svg);
+    /* background: url(../img/background-portfolio.svg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+    background-color: #141414;
 }
+
 
 .work{
     width: 100%;
@@ -360,6 +378,10 @@ a{
 .work > .workText{
     position: absolute;
     top: 85px;
+}
+.project1 .work > .workText h1{
+    background: rgba(0, 0, 0, 0.2);
+    padding: 3px 20px;
 }
 .project1 .work > .workText a{
     color: #a4081f;
@@ -373,10 +395,11 @@ a{
 }
 .project2 .work > .workText a h5{
     font-weight: 600;
-    color: #9a6a28;
+    color: #29c65a;
 }
 .project2 .work > .workText h1{
-    color: #29c65a;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 3px 20px;
 }
 .project1 .work > .workText > .underline{
     display: block;
@@ -406,4 +429,11 @@ a{
 }
 .work ul li{
     margin-top: 20px;
+}
+.btnSiteHome{
+    border: solid 2px #ffbb00;
+    color: #ffbb00;
+    padding: 0.6rem 3rem;
+    text-transform: uppercase;
+
 }
