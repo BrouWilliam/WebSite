@@ -35,6 +35,7 @@ body{background-color: black;font-family: 'Raleway', sans-serif;}
 }
 nav{
     background-color: #FFBB00;
+    transition: 0.5s;
 }
  nav.black{
     padding: 5px 10px;
