@@ -1,8 +1,24 @@
 :root {
     --primary-color: #fc466b;
     --second-color: #3f5efb;
+    --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    --light-navy: #112240;
+    --light-slate: #a8b2d1;
 }
-
+.header .contorno{
+    position: absolute;
+    left: 0;
+}
+.header .contorno h2 {
+    -webkit-text-stroke-color: #dbd8d2;
+    text-transform: uppercase;
+    font-size: 28.6rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    position: absolute;
+    margin: 0;
+    opacity: 0.1;
+}
 body {
     background-color: black;
     font-family: 'Open Sans', sans-serif;
@@ -399,9 +415,10 @@ h4 {
     color: #fff;
 }
 
-.do .row .col-lg-8 .row .col-lg-6 .media i {
-    font-size: 2em;
+.do .media i {
+    font-size: 1.3em !important;
 }
+
 
 .timeline {
     position: relative;
@@ -829,6 +846,7 @@ a {
     .header {
         background-image: url(../img/wallpaper-header-mobile.jpg);
         background-attachment: initial !important;
+        margin-top: 5em;
     }
 }
 
@@ -871,6 +889,7 @@ h1.typewriter::after {
 
 .stats {
     padding: 2em 0;
+    background: #141414;
 }
 
 .stats .container .item-stats {
@@ -979,4 +998,155 @@ h1.typewriter::after {
     font-size: 14px;
     font-style: italic;
     margin-top: 4px;
+}
+
+.trabalhos .row {
+    margin: 8em 0;
+}
+
+.trabalhos img {
+    border-radius: 5px;
+}
+
+.trabalhos .content h4 {
+    font-weight: 600;
+}
+
+.trabalhos .content .textbox {
+    background: var(--primary-color);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+.trabalhos .content .tecnologias span {
+    padding: 2px 10px;
+    color: #ababab;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.trabalhos .container .content{
+    margin: 5em 0;
+}
+
+.trabalhos .container .content{
+    position: relative;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+
+.trabalhos .container .content .text-content{
+    position: relative;
+    grid-area: 1 / 1 / -1 / 7; 
+    
+}
+.trabalhos .container .content .text-content .textbox{
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+    transition: var(--transition);
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+    border-radius: 4px;
+    background-color: #141414;
+    color: var(--light-slate);
+    font-size: var(--fz-lg);
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+.trabalhos .container .content .imgContent{
+    grid-area: 1 / 6 / -1 / -1;
+    position: relative;
+    z-index: 1;     
+}
+
+.trabalhos .container .content .imgContent img{
+    transform: scale(0.98);
+    transition: 0.5s ease-in-out;
+}
+.trabalhos .container .content .imgContent img:hover{
+    transform: scale(1);
+}
+.text-grid-right{
+    grid-column: 7 / -1 !important;
+    text-align: right;
+}
+.img-grid-right{
+    grid-column: 1 / 8 !important; 
+}
+
+
+.btnVerMais{
+    text-transform: uppercase;
+    color: var(--primary-color);
+    border: solid 2px var(--primary-color);
+    padding: 0.5em 2em;
+    border-radius: 7px;
+    font-weight: 700;
+}
+.btnVerMais:hover{
+    border-color: white;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+
+.do .row .col-lg-8 .content{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.process .content{
+    background: #141414;
+    padding: 40px 30px;
+    text-align: center;
+    border-radius: 13px;
+    transform: scale(0.95);
+    transition: 0.3s ease-in-out;
+}
+.process .content:hover{
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.process h2{
+    font-weight: 600;
+}
+.process .content .icone{
+    position: absolute;
+    top: -22px;
+    left: calc(10% - 36px);
+    transition: 0.2s;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 42px;
+    height: 42px;
+    background: black;
+}
+.process .content .icone span{
+    color: var(--primary-color);
+    font-weight: 700;
+}
+.process .content h4{
+    font-weight: 600;
+    color: white;
+    font-size: 22px;
+    padding-bottom: 15px;
+    margin: 0;
+}
+.process .content p{
+    font-size: 15px;
+    margin: 0;
 }
