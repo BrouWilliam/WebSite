@@ -210,6 +210,9 @@ a:hover{
 footer{
     background: black;
 }
+footer .social-media ul{
+  list-style: none;
+}
 footer .social-media ul li{
     margin: 15px;
 }
