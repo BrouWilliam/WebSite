@@ -109,9 +109,9 @@
       $('.navbar-expand-md').addClass('navbar-trans');
     }
     if ($(window).scrollTop() > top) {
-      $('.scrolltop-mf').fadeIn(1000, "easeInOutExpo");
+      $('.scrolltop-mf').fadeIn(2000, "easeInOutExpo");
     } else {
-      $('.scrolltop-mf').fadeOut(1000, "easeInOutExpo");
+      $('.scrolltop-mf').fadeOut(5000, "easeInOutExpo");
     }
   });
 

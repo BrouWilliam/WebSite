@@ -34,6 +34,7 @@ html {
     padding: 0.5em 2em;
     border-radius: 7px;
     font-weight: 700;
+    transition: var(--transition);
 }
 
 .btnVerMais:hover{
@@ -776,6 +777,7 @@ h1.typewriter::after {
 
 .contact li {
     color: white;
+    margin-bottom: 1rem;
 }
 
 .contact .butt {
